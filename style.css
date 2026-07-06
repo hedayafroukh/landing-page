@@ -247,3 +247,50 @@ ul{
     color:#4f4019;
     font-size:22px;
 }
+
+.products{
+    padding:80px;
+    background-color:#f6f2ee;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#B88E2F;
+    font-size:38px;
+}
+.product{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.p-card{
+    background-color:white;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    padding-bottom:20px;
+    border-radius:20px;
+}
+
+.p-card:hover{
+    transform:translateY(-10px);
+}
+
+.p-card img{
+    height:280px;
+    object-fit:cover;
+}
+
+.p-card h3{
+    margin:15px 0 10px;
+    color:#4f4019;
+}
+
+.p-card p{
+    color:#B88E2F;
+    font-weight:bold;
+}
+
