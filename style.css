@@ -133,7 +133,7 @@ ul{
 }
 
 .about-content{
-    width:70%;
+    width:90%;
     margin:auto;
     text-align:center;
     background-color:#f6f0e8;
@@ -155,4 +155,54 @@ ul{
     line-height:1.9;
     max-width:700px;
     margin:20px auto 0;
+}
+
+.services{
+    padding:90px 80px;
+    background-color:#f6f2ee;
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+    color:#B88E2F;
+    margin-bottom:50px;
+}
+
+.services-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    width:400px;
+    background-color:#efe1cd;
+    padding:35px 25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background-color:#dbcebd;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.card ion-icon{
+    font-size:55px;
+    color:#ac862d;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:22px;
+    color:#4f4019;
+}
+
+.card p{
+    color:#78673e;
+    line-height:1.8;
 }
