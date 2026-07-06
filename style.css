@@ -69,12 +69,60 @@ ul{
 .nav-icons ion-icon:hover{
     color:#B88E2F;
 }
-.btn{
-    padding:15px;
+.btn1{
+    padding:10px;
+    border:none;
+    background:#f7ecd0;
+    color:#B88E2F;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.hero{
+    height:650px;
+    background-image:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:80px;
+}
+
+.content{
+    width:420px;
+    background-color:#FFF3E3;
+    padding:40px;
+    border-radius:10px;
+}
+
+.content h4{
+    margin-bottom:10px;
+}
+
+.content h1{
+    color:#B88E2F;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.content p{
+    margin-bottom:25px;
+}
+.btn2{
+    padding:15px 35px;
     border:none;
     background:#B88E2F;
     color:white;
     font-weight:bold;
+    font-size:18px;
+    border-radius:7px;
     cursor:pointer;
-    border-radius:5px;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#71581c;
+    transform:translateY(-3px);
 }
