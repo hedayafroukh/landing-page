@@ -12,7 +12,7 @@
   --light-bg: #f6f0e8;
   --card-bg: #efe1cd;
   --card-hover: #dbcebd;
-  --secondary-text: #78673e;
+  --secondary-text: #9c8655;
   --heading-color: #4f4019;
 }
 body {
@@ -323,13 +323,13 @@ form button:hover {
   transform: translateY(-3px);
 }
 .footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
+  background-color: var(--secondary-text);
+  color: var(--white-color);
   text-align: center;
   padding: 40px;
 }
 .footer h2 {
-  color: var(--main-color);
+  color: var(--dark-color);
   margin-bottom: 15px;
 }
 .footer p {
