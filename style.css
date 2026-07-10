@@ -28,11 +28,9 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
-
 ul {
   list-style: none;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -44,7 +42,6 @@ ul {
   top: 0;
   z-index: 1000;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -53,35 +50,28 @@ ul {
   font-weight: bold;
   color: var(--main-color);
 }
-
 .logo ion-icon {
   font-size: 35px;
 }
-
 .nav1 {
   display: flex;
   gap: 35px;
 }
-
 .nav1 a {
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 .nav1 a:hover {
   color: var(--main-color);
 }
-
 .nav-icons {
   display: flex;
   gap: 20px;
   font-size: 22px;
 }
-
 .nav-icons ion-icon {
   cursor: pointer;
 }
-
 .nav-icons ion-icon:hover {
   color: var(--main-color);
 }
@@ -103,7 +93,6 @@ ul {
   background-color: var(--light-bg);
   transform: translateY(-2px);
 }
-
 .hero {
   height: 650px;
   background-image: url("images/hero.jpg");
@@ -113,25 +102,30 @@ ul {
   justify-content: flex-end;
   align-items: center;
   padding: 80px;
+  position: relative;
 }
-
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
 .hero-content {
   width: 420px;
-  background-color: var(--light-bg);
+  background-color: #f5f0eae8;
   padding: 40px;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
-
 .hero-content h4 {
   margin-bottom: 10px;
 }
-
 .hero-content h1 {
   color: var(--main-color);
   font-size: 45px;
   margin-bottom: 20px;
 }
-
 .hero-content p {
   margin-bottom: 25px;
 }
@@ -148,17 +142,14 @@ ul {
   cursor: pointer;
   transition: 0.3s ease;
 }
-
 .btn2:hover {
   background: var(--dark-color);
   transform: translateY(-2px);
 }
-
 .about {
   padding: 90px;
   background-color: var(--background-color);
 }
-
 .about-content {
   width: 90%;
   margin: auto;
@@ -168,13 +159,12 @@ ul {
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
-
-.about h2 {
+.section-title {
   font-size: 38px;
   color: var(--main-color);
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
 }
-
 .about p {
   color: var(--secondary-text);
   font-size: 18px;
@@ -182,25 +172,16 @@ ul {
   max-width: 700px;
   margin: 20px auto 0;
 }
-
 .services {
   padding: 90px 80px;
   background-color: var(--background-color);
   text-align: center;
 }
-
-.services h2 {
-  font-size: 38px;
-  color: var(--main-color);
-  margin-bottom: 50px;
-}
-
 .services-container {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-
 .card {
   width: 400px;
   background-color: var(--card-bg);
@@ -209,25 +190,21 @@ ul {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
-
 .card:hover {
   transform: translateY(-8px);
   background-color: var(--card-hover);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
-
 .card ion-icon {
   font-size: 55px;
   color: var(--main-color);
   margin-bottom: 20px;
 }
-
 .card h3 {
   margin-bottom: 15px;
   font-size: 22px;
   color: var(--heading-color);
 }
-
 .card p {
   color: var(--secondary-text);
   line-height: 1.8;
@@ -236,17 +213,10 @@ ul {
   padding: 80px;
   text-align: center;
 }
-
-.categories h2 {
-  margin-bottom: 10px;
-  color: var(--main-color);
-  font-size: 38px;
-}
 .categories p {
   color: var(--secondary-text);
   font-size: 16px;
 }
-
 .category {
   display: flex;
   gap: 30px;
@@ -254,7 +224,6 @@ ul {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-
 .menu img {
   width: 400px;
   height: 420px;
@@ -270,17 +239,9 @@ ul {
   color: var(--heading-color);
   font-size: 22px;
 }
-
 .products {
   padding: 80px;
   background-color: var(--background-color);
-}
-
-.products h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--main-color);
-  font-size: 38px;
 }
 .product {
   display: flex;
@@ -288,7 +249,6 @@ ul {
   gap: 30px;
   flex-wrap: wrap;
 }
-
 .p-card {
   width: 280px;
   background-color: white;
@@ -298,23 +258,19 @@ ul {
   padding-bottom: 20px;
   border-radius: 20px;
 }
-
 .p-card:hover {
   transform: translateY(-10px);
 }
-
 .p-card img {
   width: 100%;
   height: 280px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
 .p-card h3 {
   margin: 15px 0 10px;
   color: var(--heading-color);
 }
-
 .p-card p {
   color: var(--main-color);
   font-weight: bold;
@@ -322,14 +278,6 @@ ul {
 .contact {
   padding: 80px;
 }
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: var(--main-color);
-  font-size: 38px;
-}
-
 form {
   max-width: 800px;
   margin: auto;
@@ -337,7 +285,6 @@ form {
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(27, 26, 26, 0.08);
 }
-
 form label {
   display: block;
   margin-top: 20px;
@@ -345,16 +292,20 @@ form label {
   font-weight: bold;
   color: var(--heading-color);
 }
-
 form input,
 form textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--secondary-text);
   border-radius: 6px;
   color: var(--text-color);
 }
-
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px rgba(184, 142, 47, 0.4);
+}
 form button {
   margin-top: 25px;
   padding: 15px 35px;
@@ -377,21 +328,22 @@ form button:hover {
   text-align: center;
   padding: 40px;
 }
-
 .footer h2 {
   color: var(--main-color);
   margin-bottom: 15px;
 }
-
 .footer p {
   margin: 8px;
 }
-
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 25px 15px;
+  }
+
+  .logo {
+    margin-bottom: 5px;
   }
 
   .nav1 {
@@ -403,6 +355,7 @@ form button:hover {
   .nav-icons {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 15px;
   }
 
   .hero {
@@ -423,6 +376,15 @@ form button:hover {
 
   .about {
     padding: 40px 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
   }
 
   .services {
@@ -463,11 +425,35 @@ form button:hover {
     align-items: center;
   }
 
+  .p-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
   .contact {
     padding: 50px 20px;
   }
 
   form {
     padding: 30px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .category {
+    flex-wrap: wrap;
+  }
+
+  .menu img {
+    width: 300px;
+    height: 320px;
+  }
+
+  .p-card {
+    width: 260px;
   }
 }
